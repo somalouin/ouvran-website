@@ -1,25 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --cream: #f4efe4;
-  --parchment: #ebe4d4;
-  --forest: #1e3a2f;
-  --sage: #4a6b5a;
-  --ink: #1a1814;
-  --muted: #6b6458;
-  --rule: #c4b9a4;
+  --bg: #eeeeee;
+  --surface: #ffffff;
+  --border: #333333;
+  --text: #111111;
+  --muted: #666666;
+  --link: #0000cc;
+  --link-visited: #551a8b;
 }
 
 @theme inline {
-  --color-cream: var(--cream);
-  --color-parchment: var(--parchment);
-  --color-forest: var(--forest);
-  --color-sage: var(--sage);
-  --color-ink: var(--ink);
-  --color-muted: var(--muted);
-  --color-rule: var(--rule);
-  --font-serif: var(--font-libre);
-  --font-mono: var(--font-plex-mono);
+  --font-sans: Tahoma, Verdana, Arial, sans-serif;
 }
 
 * {
@@ -31,45 +23,53 @@ html {
 }
 
 body {
-  background-color: var(--cream);
-  color: var(--ink);
-  font-family: var(--font-libre), Georgia, "Times New Roman", serif;
-  line-height: 1.6;
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--link);
+}
+
+a:visited {
+  color: var(--link-visited);
 }
 
 ::selection {
-  background-color: var(--forest);
-  color: var(--cream);
+  background: #cce;
+  color: #000;
 }
 
-.retro-rule {
-  border: none;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
-  height: 4px;
-  background: transparent;
+.btn {
+  display: inline-block;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 0;
+  padding: 6px 16px;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1.2;
 }
 
-.retro-label {
-  font-family: var(--font-plex-mono), "Courier New", monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--muted);
+.btn:hover {
+  background: #f5f5f5;
 }
 
-.grain {
-  position: relative;
+.btn:active {
+  background: #e0e0e0;
 }
 
-.grain::before {
-  content: "";
-  position: fixed;
-  inset: 0;
+.btn:disabled,
+.btn-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
   pointer-events: none;
-  opacity: 0.04;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 128px 128px;
-  z-index: 50;
 }
