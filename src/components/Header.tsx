@@ -5,19 +5,19 @@ const navItems = [{ href: "#products", label: "Products" }];
 
 export function Header() {
   return (
-    <header className="border-b-2 border-[#333] bg-white">
+    <header>
       <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-5">
-        <Link href="/" className="flex items-center gap-3 no-underline text-inherit">
+        <Link
+          href="/"
+          className="flex items-center gap-3 no-underline text-inherit"
+        >
           <Image
-            src="/logo.svg"
+            src="/text.png"
             alt="Ouvran Golf logo placeholder"
-            width={48}
-            height={48}
+            width={200}
+            height={100}
             priority
           />
-          <span className="text-sm font-bold tracking-wide uppercase">
-            Ouvran Golf
-          </span>
         </Link>
 
         <nav aria-label="Main navigation">
