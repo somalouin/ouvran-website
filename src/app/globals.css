@@ -28,7 +28,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
   font-family: Tahoma, Verdana, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -50,9 +50,9 @@ a:visited {
   background: var(--surface);
   border: 2px solid var(--border);
   border-radius: 0;
-  padding: 6px 16px;
+  padding: 8px 18px;
   font-family: Tahoma, Verdana, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 18px;
   color: var(--text);
   text-decoration: none;
   cursor: pointer;
