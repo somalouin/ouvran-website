@@ -3,49 +3,59 @@ import Link from "next/link";
 
 const navItems = [{ href: "#products", label: "Products" }];
 
+const marqueeItems = Array.from({ length: 8 }, (_, index) => index);
+
 export function Header() {
   return (
-    <header className="border-b-2 border-black bg-white">
-      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4 px-6 py-5">
-        <Link
-          href="/"
-          className="flex items-center justify-self-start no-underline text-inherit"
-        >
-          <Image
-            src="/text.png"
-            alt="Ouvran Golf"
-            width={200}
-            height={100}
-            priority
-          />
-        </Link>
+    <>
+      <header className="border-b-2 border-black bg-white">
+        <div className="flex items-center justify-between gap-4 px-6 py-5">
+          <Link
+            href="/"
+            className="flex items-center no-underline text-inherit"
+          >
+            <Image
+              src="/text.png"
+              alt="Ouvran Golf"
+              width={130}
+              height={65}
+              priority
+            />
+          </Link>
 
-        <Link
-          href="/"
-          className="justify-self-center no-underline"
-          aria-label="Ouvran Golf home"
-        >
-          <Image
-            src="/icon-header.svg"
-            alt=""
-            width={64}
-            height={64}
-            priority
-          />
-        </Link>
+          <nav aria-label="Main navigation">
+            <ul className="flex gap-3 list-none m-0 p-0">
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <a href={item.href} className="btn">
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-        <nav aria-label="Main navigation" className="justify-self-end">
-          <ul className="flex gap-3 list-none m-0 p-0">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <a href={item.href} className="btn">
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+      <div
+        className="border-b-2 border-black bg-white py-3 overflow-hidden"
+        aria-hidden
+      >
+        <div className="marquee-track">
+          {[...marqueeItems, ...marqueeItems].map((item, index) => (
+            <span key={index} className="marquee-item">
+              <Image
+                src="/icon-header.svg"
+                alt=""
+                width={36}
+                height={36}
+                className="shrink-0"
+              />
+              <span className="lowercase">ouvran golf</span>
+            </span>
+          ))}
+        </div>
       </div>
-    </header>
+    </>
   );
 }
