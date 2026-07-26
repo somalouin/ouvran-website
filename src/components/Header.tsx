@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const navItems = [{ href: "#products", label: "Products" }];
+const navItems = [
+  { href: "#about", label: "About" },
+  { href: "#products", label: "Products" },
+];
 
 const marqueeItems = Array.from({ length: 8 }, (_, index) => index);
 
