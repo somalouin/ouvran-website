@@ -6,8 +6,6 @@
   --border: #333333;
   --text: #111111;
   --muted: #666666;
-  --link: #0000cc;
-  --link-visited: #551a8b;
 }
 
 @theme inline {
@@ -33,11 +31,11 @@ body {
 }
 
 a {
-  color: var(--link);
+  color: inherit;
 }
 
 a:visited {
-  color: var(--link-visited);
+  color: inherit;
 }
 
 ::selection {
