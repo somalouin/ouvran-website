@@ -17,8 +17,8 @@ export function Header() {
           <Image
             src="/text.png"
             alt="Ouvran Golf"
-            width={130}
-            height={65}
+            width={160}
+            height={80}
             priority
           />
         </Link>

@@ -65,6 +65,11 @@ a:visited {
   background: #e0e0e0;
 }
 
+header .btn {
+  padding: 5px 12px;
+  font-size: 16px;
+}
+
 .btn:disabled,
 .btn-disabled {
   opacity: 0.45;
