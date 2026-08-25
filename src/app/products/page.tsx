@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function ProductsPage() {
   return (
     <div className="mx-auto max-w-2xl">
-      <section className="border-b-2 border-black px-6 py-16">
+      <section className="px-6 py-16">
         <h1 className="text-2xl font-bold uppercase tracking-wide m-0">
           Products
         </h1>
       </section>
 
-      <section className="px-6 py-16">
+      <section className="px-6 py-2">
         <article className="flex flex-col gap-8 sm:flex-row sm:items-start">
           <Image
             src="/driver-01.png"

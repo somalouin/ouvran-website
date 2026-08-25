@@ -1,13 +1,13 @@
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-2xl">
-      <section className="border-b-2 border-black px-6 py-16">
+      <section className="px-6 py-16">
         <h1 className="text-2xl font-bold uppercase tracking-wide m-0">
           About
         </h1>
       </section>
 
-      <section className="flex flex-col gap-6 px-6 py-16">
+      <section className="flex flex-col gap-6 px-6 py-2">
         <p className="m-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
