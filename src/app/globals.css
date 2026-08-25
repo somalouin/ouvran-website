@@ -46,7 +46,7 @@ a:visited {
 .btn {
   display: inline-block;
   background: var(--surface);
-  border: 2px solid var(--border);
+  border: 2px dotted var(--border);
   border-radius: 0;
   padding: 8px 18px;
   font-family: Georgia, "Times New Roman", Times, serif;
