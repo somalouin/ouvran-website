@@ -18,7 +18,7 @@ export default function ProductsPage() {
           />
 
           <div className="flex flex-col gap-4">
-            <p className="m-0 text-[#666]">Coming soon</p>
+            <p className="m-0 text-[#666]">Driver Headcover #1</p>
 
             <button type="button" className="btn btn-disabled w-fit" disabled>
               Join waiting list
