@@ -5,6 +5,14 @@
     </clipPath>
   </defs>
   <rect width="32" height="32" fill="#000080"/>
+  <path
+    d="M 0 32
+       L 0 23
+       Q 16 19 32 23
+       L 32 32
+       Z"
+    fill="#339933"
+  />
   <circle cx="16" cy="14" r="8" fill="#ffffff" stroke="#cccccc" stroke-width="0.75"/>
   <g clip-path="url(#ball-clip)" fill="#d4d4d4">
     <circle cx="13" cy="8" r="0.9"/>
