@@ -14,7 +14,7 @@ export default function ProductsPage() {
             alt="Driver headcover placeholder"
             width={200}
             height={150}
-            className="shrink-0 border-2 border-[#333] bg-white"
+            className="shrink-0 bg-white"
           />
 
           <div className="flex flex-col gap-4">
