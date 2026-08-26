@@ -46,7 +46,7 @@ a:visited {
 .btn {
   display: inline-block;
   background: var(--surface);
-  border: 2px dotted var(--border);
+  border: none;
   border-radius: 0;
   padding: 8px 18px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -67,7 +67,7 @@ a:visited {
 
 header .btn {
   padding: 5px 12px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .btn:disabled,
